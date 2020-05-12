@@ -8,17 +8,20 @@ if(!$connect){
 	die('connection failed:'.mysql_error());
     }
 	$name=$_POST['name'];
-	$email=$_POST['email'];
-	$reg_no=$_POST['reg_no'];
+    $canteen=$_POST['canteen'];
+    $item=$_POST['item'];
 	$password=$_POST['password'];
-	$check="SELECT * FROM registration_table WHERE name='$name' AND email='$email' AND Reg_no='$reg_no' AND Password='$password'";
+	$feedback=$_POST['feedback'];
+	$check="SELECT * FROM registration_table WHERE name='$name' AND Password='$password'";
     $result=mysqli_query($connect,$check)  or die(mysqli_error($connect));
 	if(mysqli_num_rows($result)==1){
-		echo "you are logged in succesfully";
+	     $fill="INSERT INTO feedback_table (name,canteen,item,feedback) VALUES ('$name','$canteen','$item','$feedback')";
+	     $new_result=mysqli_query($connect,$fill)  or die(mysqli_error($connect));
+	     echo "Your feedback has been recorded";
 	}
 	
 	else
-		echo "You are not a registered user";
+		echo "Either You are not a registered user or you fill one or more field wrong";
 
 mysqli_close($connect);
 ?>
