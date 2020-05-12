@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#logo{
+    border-bottom: none;
+    position: relative;
+    top: 15px;
+    padding: 0 15px;
+    margin: 0;
+}
+#logo img{
+    width: 80px
+}
+.nav{
+    width: 100%;
+    /* height: 140px; */
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 10;
+    -webkit-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px -4px rgba(0,0,0,0.75);;
+}
+.nav ul li{
+    font-size: 19px;
+    color: #000;
+    display: inline-block;
+    padding:0 30px;
+    padding-bottom: 20px;
+    margin: 0 40px;
+   /* height: 10px; */
+}
+.nav ul li:hover{
+    border-bottom:3px solid red;
+}
+.main {
+    background:  url('./images/pizza_ps.jpg');
+    /* width: 100vw; */
+    height: 130vh;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.heading{
+    text-align: center;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.product img{
+   
+    
+}
+.product > div{
+    margin: 20px;
+    width:  45vw;
+    height: 60vh;
+    /* background-color: yellow; */
+}
+.bika{
+    background: url('./images/pastrie.jpg');
+}
+.chichi{
+    background: url('./images/plates.jpg');
+}
+.yamuna{
+   background: url('./images/dosa.jpg');
+}
+.raj{
+    background: url('./images/fries.jpg');
+}
+.bika, .raj, .chichi, .yamuna
+{ 
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product span{
+    font-size: 25px;
+    color: white;
+    padding: 5px 30px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+.product span a{
+    color: white;
+}
+.product span:hover {
+    border: 4px solid white;
+}
