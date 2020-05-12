@@ -1,0 +1,19 @@
+.form{
+border:2px solid black;
+margin:auto;
+width:350px;
+box-sizing: border-box;
+height:460px;
+}
+.image{
+    align-self: center;
+    margin-left: 70px;
+
+}
+.input{
+	margin-left: 8px;
+	align-content:center;
+	width:90%;
+	padding-left: 15px;
+	height:30px;
+}
