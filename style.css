@@ -16,6 +16,7 @@ a{
     width: 80px
 }
 .nav{
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     /* height: 140px; */
     position: fixed;
@@ -35,7 +36,7 @@ a{
    /* height: 10px; */
 }
 .nav ul li:hover{
-    border-bottom:3px solid red;
+    border-bottom: 3px solid red;
 }
 .main {
     background:  url('./images/pizza_ps.jpg');
@@ -48,6 +49,9 @@ a{
 }
 .heading{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    
 }
 .product{
     display: flex;
@@ -55,10 +59,7 @@ a{
     flex-direction: row;
     justify-content: center;
 }
-.product img{
-   
-    
-}
+
 .product > div{
     margin: 20px;
     width:  45vw;
@@ -79,6 +80,7 @@ a{
 }
 .bika, .raj, .chichi, .yamuna
 { 
+    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     color: white;
     text-align: center;
@@ -98,4 +100,50 @@ a{
 }
 .product span:hover {
     border: 4px solid white;
+}
+.footer{
+    background-color: wheat;
+}
+.connect
+{
+  /* height: 20vh; */
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.connect div{
+    margin: 0 40px;
+    padding-top: 25px;
+}
+@media screen and (max-width : 935px) {
+.nav{
+    background-color:coral;
+}
+.nav ul li{
+    margin: 0 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+@media screen and (max-width : 660px) {
+    .nav ul li{
+        display: block;
+        padding-top: 20px;
+    }
+    .nav{
+        position: static;
+    }
+    .nav ul li:hover{
+     border-bottom: 3px solid white;
+    }
+    .product > div{
+        width: 70vw;
+    }
+    .main{
+        background : url('./images/pizza_ps3.jpg');
+        background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
 }
