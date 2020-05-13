@@ -7,7 +7,7 @@
 <body>
 	<div class="form">
 	<img class="image" src="./images/logo.png" alt=""><br><br>
-<form action="regis.php" method="POST">
+<form action="regis.php" method="POST" autocomplete="off">
 <input class="input" type="text" name="name" placeholder="Name" required><br><br>
 <input class="input" type="text" name="reg_no" placeholder="Registration number" required><br><br>
 <input class="input"  type="text" name="email" placeholder="Email" required><br><br>

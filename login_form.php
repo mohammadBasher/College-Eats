@@ -7,7 +7,7 @@
 <body>
 	<div class="form" style="height:490px ">
 	<img class="image" src="./images/logo.png" alt=""><br><br>
-<form action="login.php" method="POST">
+<form action="login.php" method="POST" autocomplete="off">
 <input class="input" type="text" name="name" placeholder="Name" required><br><br>
 <input class="input" type="password" name="password" placeholder="please enter your password" required><br><br>
 <input class="input" type="text" name="canteen" placeholder="Canteen" required><br><br>
