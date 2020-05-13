@@ -13,7 +13,8 @@ if(!$con){
 $sql = "CREATE TABLE registration_table(
     name VARCHAR(20) NOT NULL,
 	email VARCHAR(150) NOT NULL,
-	Reg_no int(8) NOT NULL PRIMARY KEY
+	Reg_no int(8) NOT NULL PRIMARY KEY,
+                  password VARCHAR(20) NOT NULL
 	)";
 	if(mysqli_query($con,$sql)){
 	echo "TABLE first_table created successfully";
