@@ -10,11 +10,11 @@ if(!$con){
 	die("conection failed:".mysqli_conect_error());
 }
 //sql to create table
-$sql = "CREATE TABLE registration_table(
-    name VARCHAR(20) NOT NULL,
-	email VARCHAR(150) NOT NULL,
-	Reg_no int(8) NOT NULL PRIMARY KEY;
-	                password VARCHAR(20) NOT NULL
+$sql = "CREATE TABLE feedback_table(
+    name VARCHAR(20),
+	canteen VARCHAR(30),
+	item VARCHAR(30) ,
+	feedback VARCHAR(200)
 	)";
 	if(mysqli_query($con,$sql)){
 	echo "TABLE first_table created successfully";

@@ -16,7 +16,7 @@ if(!$connect){
 	if(!mysqli_query($connect,$user_info))
 	echo "Error:".mysqli_error($connect);
 	else{
-		echo "Your information was added to the database";
+		header("location:feedback_form.html");
     }
 	}
 	else{

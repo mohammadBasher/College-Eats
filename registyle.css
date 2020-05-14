@@ -3,7 +3,7 @@ border:2px solid black;
 margin:auto;
 width:350px;
 box-sizing: border-box;
-height:460px;
+height:470px;
 }
 .image{
     align-self: center;
@@ -16,4 +16,10 @@ height:460px;
 	width:90%;
 	padding-left: 15px;
 	height:30px;
+}
+.regis{
+	background: green;
+	color:white;
+	text-decoration: none;
+	
 }
