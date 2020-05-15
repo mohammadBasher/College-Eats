@@ -2,11 +2,15 @@
 <html>
 <head>
 <title>Order Now</title>
-<link rel="stylesheet" type="text/css" href="registyle.css">
+<link rel="stylesheet"  href="./registyle.css">
+<style type="text/style">
+
+</style>
 <head>
-<body>
-	<div class="form" style="height:615px ">
-	<img class="image" src="./images/logo.png" alt=""><br><br>
+<body style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/fruit.jpg');">
+	<div class="form" style="min-height: 120vh;  background: brown; border-radius: 5px; min-height: 120vh;" >
+  <img class="image" src="./images/logo.png" alt=""><br>
+  
 <form action="order.php" method="POST" autocomplete="off">
 <input class="input" type="text" name="name" placeholder="Name" required><br><br>
 <input class="input" type="text" name="Reg_no" placeholder="Registration Number" required><br><br>
@@ -15,10 +19,11 @@
 <input class="input" type="text" name="canteen" placeholder="Canteen" required><br><br>
 <input class="input" type="text" name="item" placeholder="Item" required><br><br>
 <input class="input" type="text" name="quantity" placeholder="Quantity" required><br><br>
-  <button class="input" style="background:black"><a style="color:white;text-decoration:none" href="payment.php">payment options</a>
-  </button>
-  <input  class="input" style="border-radius:2px;background:red;color:white" type="submit"  name="submit" value="Order">  <br>
-  <button class="input" style="background:green"><a style="color:white;text-decoration:none" href="registration_form.php">Register Here</a></button>
+  <!-- <button class="input" style="background:black"><a style="color:white;text-decoration:none" href="payment.php">payment options</a>
+  </button> -->
+  <input  class="input" style="border-radius:2px;background:red;color:white; border-radius: 25px;" type="submit"  name="submit" value="Order">  <br>
+  <br>
+  <button class="input" style="background:blue; border-radius: 25px;"><a style="color:white;text-decoration:none; " href="registration_form.php">Register Here</a></button>
 </form>
 </div>
 </body>
