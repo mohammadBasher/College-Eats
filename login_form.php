@@ -3,7 +3,7 @@
 <head>
 <title>Feedback form</title>
 <link rel="stylesheet" type="text/css" href="registyle.css">
-<head>
+</head>
 <body>
 	<div class="form" style="height:490px ">
 	<img class="image" src="./images/logo.png" alt=""><br><br>
@@ -18,4 +18,4 @@
 </form>
 </div>
 </body>
-</head>
+</html>

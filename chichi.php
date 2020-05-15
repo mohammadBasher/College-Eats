@@ -6,6 +6,7 @@
     <title>CHICHI</title>
     <link rel="stylesheet" href="./chichi.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="menu_style.css">
 </head></body>
 </html>
 <body>
@@ -29,16 +30,37 @@
 
             </div>
                 <div class="menu">
+  <?php
+$server_NAME="localhost";
+$admin_NAME="admin";
+$password="localhost";
+$database="first_DB";
+$connect=mysqli_connect($server_NAME,$admin_NAME,$password,$database);
+if(!$connect){
+    die('connection failed:'.mysql_error());
+    }
+    $feedback="SELECT * FROM menu_table 
+    WHERE canteen='chichi'";
+    $result=mysqli_query($connect,$feedback);
+    echo "<table class='table'><thead><th>S.No</th><th>Item</th><th>Price</th></thead><tr>";
+    while($row=mysqli_fetch_assoc($result)){
+        echo "<td>".$row['S.No']."</td><td>".$row['Item']."</td><td>".$row['Price'];
+        echo "</td></tr><tr>";
+    }
+    echo "</table>";
 
+    mysqli_close($connect);
+?>  
                    
                 </div>
-                <div class="give-feed">
-                    click to give feedback!
+                 <div class="give-feed">
                     <br><br><br>
-                    <span><a href="#">Here</a></span>
+                    <span><a href="login_form.php">Give Feedback</a></span><br><br><br>
+                    
                 </div>                 
-                <br><br>
+                <br>
                 <div class="disp-feed">
+                 <span><a href="c_d_feedback.php">See Feedbacks </a></span><br><br>
                 </div>
         </div>
 </body>
