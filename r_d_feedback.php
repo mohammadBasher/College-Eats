@@ -17,9 +17,9 @@ if(!$connect){
     $feedback="SELECT * FROM feedback_table 
     WHERE canteen='raj'";
     $result=mysqli_query($connect,$feedback);
-    echo "<table class='table'><thead><th>User Name</th><th>Item</th><th>Feedback</th></thead><tr>";
+    echo "<table class='table'><thead><th>Registration Number</th><th>Item</th><th>Feedback</th></thead><tr>";
     while($row=mysqli_fetch_assoc($result)){
-        echo "<td>".$row['name']."</td><td>".$row['item']."</td><td>".$row['feedback'];
+        echo "<td>".$row['Reg_no']."</td><td>".$row['item']."</td><td>".$row['feedback'];
         echo "</td></tr><tr>";
     }
     echo "</table>";

@@ -8,10 +8,10 @@ $connect=mysqli_connect($server_NAME,$admin_NAME,$password,$database);
 if(!$connect){
 	die('connection failed:'.mysql_error());
     }
-    if(isset($_SESSION["name"]) and isset($_SESSION["password"])){
-    	$name=$_SESSION["name"];
+    if(isset($_SESSION["Reg_no"]) and isset($_SESSION["password"])){
+    	$Reg_no=$_SESSION["Reg_no"];
 	    $password=$_SESSION["password"];
-	$check="SELECT * FROM registration_table WHERE name='$name' AND Password='$password'";
+	$check="SELECT * FROM registration_table WHERE Reg_no='$Reg_no' AND Password='$password'";
     $result=mysqli_query($connect,$check)  or die(mysqli_error($connect));
 	if(mysqli_num_rows($result)==1){
              header("location:feedback_form.php");
