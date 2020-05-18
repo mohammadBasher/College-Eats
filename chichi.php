@@ -55,7 +55,7 @@ if(!$connect){
                 </div>
                  <div class="give-feed">
                     <br><br><br>
-                    <span><a href="feedback.php">Give Feedback</a></span><br><br><br>
+                    <span><a href="login_form.php">Give Feedback</a></span><br><br><br>
                     
                 </div>                 
                 <br>
