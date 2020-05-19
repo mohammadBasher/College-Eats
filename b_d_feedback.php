@@ -3,8 +3,19 @@
 <head>
 <title>Feedback form</title>
 <link rel="stylesheet" type="text/css" href="table_style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
+<body 
+style="
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/fruit.jpg'); font-family: 'Montserrat', sans-serif;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    height:100vh;
+    color: white;
+    
+"
+>
 <?php
 $server_NAME="localhost";
 $admin_NAME="admin";

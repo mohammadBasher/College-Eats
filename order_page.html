@@ -4,15 +4,19 @@
 <title>Order Now</title>
 <link rel="stylesheet"  href="./registyle.css">
 <style type="text/style">
-
+*{
+  
+}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <head>
-<body style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/fruit.jpg');">
+<body style="background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/fruit.jpg'); font-family: 'Montserrat', sans-serif;">
 	<div class="form" style="min-height: 120vh; background: rgb(58,180,164);
-  background: linear-gradient(90deg, rgba(58,180,164,1) 0%, rgba(238,215,215,1) 55%, rgba(208,252,69,1) 100%);  border-radius: 5px; min-height: 120vh;" >
+  background: linear-gradient(90deg, rgba(58,180,164,1) 0%, rgba(238,215,215,1) 55%, rgba(208,252,69,1) 100%);  border-radius: 5px; min-height: 85vh;" >
   <img class="image" src="./images/logo.png" alt=""><br>
   
+    <h3 style="text-align: center;">ORDER HERE</h3>
+
 <form action="order.php" method="POST" autocomplete="off">
 <select class="input" name="canteen" >
   <option value="chichi">chichi</option>
@@ -38,9 +42,9 @@
 
   <!-- <button class="input" style="background:black"><a style="color:white;text-decoration:none" href="payment.php">payment options</a>
   </button> -->
-  <input  class="input" style=" border: none; background:red;color:white; border-radius: 25px;" type="submit"  name="submit" value="Order">  <br>
+  <input  class="input" style=" border: none; background:#6b6057;color:white; border-radius: 25px;" type="submit"  name="submit" value="Order">  <br>
   <br>
-  <button class="input" style="border: none;  background:blue; border-radius: 25px;"><a style="color:white;text-decoration:none; " href="registration_form.php">Register Here</a></button>
+  <button class="input" style="border: none;  background:#f11ed0; border-radius: 25px;"><a style="color:white;text-decoration:none; " href="registration_form.php">Register Here</a></button>
 </form>
 </div>
 </body>

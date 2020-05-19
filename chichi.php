@@ -15,7 +15,7 @@
             <li id="logo"><img src="./images/logo.png" alt=""></li>
             <li><a href="registration_form.php">Register</a></li>
             <li><a href="login_form.php">Login</a></li>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.php">Home</a></li>
         </ul>    
         </div>
         <div class="main">
